@@ -2,15 +2,15 @@
 
 This repository contains solutions to two parts of the **Soil Image Classification Challenge** organized by [Annam.ai](https://annam.ai/) at IIT Ropar.
 
-- **Part 1:** Binary classification – Soil vs Not Soil  
-- **Part 2:** Multiclass classification – Identify soil type (Alluvial, Black, Clay, Red)
+- **Part 1:** Soil Image Classification Challenge  
+- **Part 2:** Soil Image Classification Challenge
 
 ---
 
 ## 📁 Contents
 
-- `soil-classification-annam-ai.ipynb`: Binary classification notebook (Part 1)  
-- `soil-classification-part-2-annam-ai.ipynb`: Multiclass classification notebook (Part 2)  
+- `soil-classification-annam-ai.ipynb`: notebook (Part 1)  
+- `soil-classification-part-2-annam-ai.ipynb`: notebook (Part 2)  
 - `submission.csv`: Final predictions in required format (can be renamed based on the part)
 
 ---
@@ -38,21 +38,6 @@ This repository contains solutions to two parts of the **Soil Image Classificati
    - Scheduler: `StepLR`
    - Tracked metrics: **Weighted F1-score** (via `sklearn.metrics.f1_score`)
    - Early stopping based on validation F1
-
----
-
-### ✅ Part 1 – Soil vs Not Soil
-
-- Task: Binary classification  
-- Balanced class distribution using augmentations  
-- Best model selected based on `val_f1 > best_f1`
-
-### ✅ Part 2 – Soil Type Classification
-
-- Task: 4-class classification — Alluvial, Black, Clay, Red  
-- Used label mappings from `train.csv`  
-- Data was balanced and resized  
-- Same model pipeline with adjusted final layer and evaluation
 
 ---
 
